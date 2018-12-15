@@ -1,9 +1,9 @@
 def my_each(array)
   i = 0
-  new = []
+  new_array = []
     while i < array.length
       yield(array[i])
       i = i + 1
     end
-    new.collect{|i| i+1}
+    new_array.collect {|i| i + 1}
 end
